@@ -7,6 +7,8 @@ defmodule Geobox.Mixfile do
      elixir: "~> 1.4",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
+     description: description(),
+     package: package(),
      deps: deps()]
   end
 
@@ -28,6 +30,17 @@ defmodule Geobox.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    [{:geohash, "~> 1.0"}]
+    [{:geohash, "~> 1.0"},
+     {:ex_doc, ">= 0.0.0", only: :dev}]
+  end
+
+  defp description() do
+    "Geobox - lookup set of overlapping geohashes within bounding box or radius covering all intersections in given resolution, usefull for proximity search."
+  end
+
+  defp package do
+    [licenses: ["MIT"],
+     maintainers: ["Bartłomiej Różański"],
+     links: %{"GitHub" => "https://github.com/bartekupartek/geobox"}]
   end
 end
