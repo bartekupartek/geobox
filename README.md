@@ -1,6 +1,6 @@
 # Geobox
 
-**TODO: Add description**
+Geobox - lookup set of overlapping geohashes within bounding box or radius covering all intersections in given resolution, usefull for proximity search.
 
 ## Installation
 
@@ -16,4 +16,3 @@ end
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at [https://hexdocs.pm/geobox](https://hexdocs.pm/geobox).
-
